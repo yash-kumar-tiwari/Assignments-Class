@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>JavaScript Checkboxes</title>
+</head>
+
+<body style="font-size: 50; font-family: impact; background-color: silver;">
+    <p style="font-family: comic sana;" >Select your favorite Flavours :</p>
+
+   <input type="checkbox" name="Flavour" value="You Like Chocolate!!" >
+  <label for="f1"> Chocolate </label>  <br> <br>
+
+   <input type="checkbox" name="Flavour" value="You Like Vanilla">
+  <label for="f2"> Vanilla </label> 
+  
+
+    <p>
+        <button id="btn" style="font-size: 35; border-color: darkred; border-width: 10;">Get Selected Flavours </button>
+    </p>
+
+      <script>
+
+        const btn = document.querySelector('#btn');
+
+        btn.addEventListener('click', (event) =>
+
+         {
+
+
+            let checkboxes = document.querySelectorAll('input[name="Flavour"]:checked');
+
+        var checkboxes1 = document.querySelectorAll('input[name="Flavour"]:checked');
+          
+          if (checkboxes1.length == 0 )
+          {
+             alert("Pick One !!");
+          }
+          
+            
+     else {
+            let values = [];
+            checkboxes.forEach((checkbox) => {
+                values.push(checkbox.value);
+
+    
+            });
+
+
+            alert(values);
+        }
+            });
+    
+    </script>
+
+</body>
+
+</html>

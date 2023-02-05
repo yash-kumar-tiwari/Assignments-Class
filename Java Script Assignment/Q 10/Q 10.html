@@ -1,0 +1,55 @@
+
+<html>
+
+	<head>
+	<title> Text Area </title>
+
+	<style> 
+
+	body {background:grey; font-size: 50;} 
+	img{ height:75%; width:30%;}
+
+	</style>
+</head>
+<body>
+
+<form> 
+	<textarea id="ta" style=""> </textarea>
+
+	 </form>
+
+
+<img src=".\images\lord.jpg" id="onclickphoto">
+<img src=".\images\Nightwalker.jpg" id="onclickphoto2">
+<img src=".\images\jack.jpg" id="onclickphoto3">
+
+
+<script>
+const element1 = document.getElementById("onclickphoto");
+element1.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("ta").innerHTML = "Lord Of The Rings";
+}
+
+  const element2 = document.getElementById("onclickphoto2");
+element2.addEventListener("click", myFunction1);
+
+function myFunction1() {
+  document.getElementById("ta").innerHTML = "Game of Thrones";
+}
+
+ const img3 = document.getElementById("onclickphoto3");
+img3.addEventListener("click", myFunction2);
+
+function myFunction2() {
+  document.getElementById("ta").innerHTML = "Captain Jack Sparrow";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

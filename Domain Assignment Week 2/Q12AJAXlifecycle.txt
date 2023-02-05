@@ -1,0 +1,53 @@
+AJAX Lifecycle :-
+
+Client end :-
+
+-> create 'XMLHttpRequest' prototype instance
+-> create http request by using 'open' method
+-> send request using 'send' method
+
+Server end :-
+
+-> request recieved on server : 0
+-> request recieved & ready to proccess : 1
+-> request under proccess : 2
+-> response is generated : 3
+-> response send back : 4
+
+Client end :-
+
+-> recieve response from server
+-> show response by using JS & XML
+
+-----------------------------------------------------------------------
+
+Response Header :-
+
+-> onreadystatechange : it is a event which will be auto activated if response is on client side
+
+-> status : it is request status , if it is proper or not
+200 : OK
+404 : PNF
+
+-> readyState : it specify request proccessing state on server , it is managed using state value (0 , 1 , 2 , 3 , 4)
+
+4 : response send back
+
+-> responseText : it is response content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

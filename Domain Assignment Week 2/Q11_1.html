@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title> JavaScript Selection List </title>
+</head>
+<body>
+<select id="select" onchange="myFunction(this.value)" style="font-size: 18;">
+	<option > Select IceCream Flavors </option>
+	<option id="onclickop1" value="You Picked Chocolate"> Chocolate </option>
+	<option id="onclickop2" value="You Picked Vanilla"> Vanilla  </option>
+	<option id="onclickop3" value="You Picked Strawberry"> Strawberry </option>
+</select>
+<br> <br>
+<form> 
+	<textarea id="txtArea" style="font-size: 24;"> </textarea>
+</form>
+<script>
+// const element1 = document.getElementById('select');
+// element1.addEventListener("change", myFunction);
+
+function myFunction() {
+  document.getElementById("txtArea").innerHTML=this.value;
+}
+</script>
+</body>
+</html>

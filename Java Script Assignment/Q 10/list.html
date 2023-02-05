@@ -1,0 +1,68 @@
+
+<html>
+
+	<head>
+	<title> Text Area </title>
+
+	<style> 
+
+	body {background:grey; font-size: 50;} 
+	img{ height:75%; width:30%;}
+
+	</style>
+</head>
+<body>
+
+
+	<select >
+		
+		<option id="myBtn"> Mango   </option>
+		<option id="myBtn2"> pienaple  </option>
+		<option id="choco"> Chocolate  </option>
+		<option id="vani"> vanilla </option>
+		</select>
+
+
+<form> 
+	<textarea id="ta"> </textarea>
+
+	 </form>
+
+
+<script>
+const mango = document.getElementById("myBtn");
+mango.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("ta").innerHTML = "You Have Selected Mango Flavour";
+}
+
+  const pie = document.getElementById("myBtn2");
+pie.addEventListener("click", myFunction1);
+
+function myFunction1() {
+  document.getElementById("ta").innerHTML = "You Have Selected Pienaple Flavour";
+}
+
+  const choco  = document.getElementById("choco");
+choco.addEventListener("click", myFunction2);
+
+function myFunction2() {
+  document.getElementById("ta").innerHTML = "You Have Selected chocolate Flavour";
+}
+
+  const vani  = document.getElementById("vani");
+vani.addEventListener("click", myFunction3);
+
+function myFunction3() {
+  document.getElementById("ta").innerHTML = "You Have Selected vanilla Flavour";
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

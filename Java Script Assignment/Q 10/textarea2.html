@@ -1,0 +1,34 @@
+
+<html>
+
+	<head>
+	<title> Text Area </title>
+
+	<style> 
+
+	body {background:grey;} 
+	img{ height:75%; width:30%;}
+
+	</style>
+</head>
+<body>
+
+<form> 
+	<textarea id="img1"> </textarea>
+
+	 </form>
+
+
+<img src=".\images\lord.jpg" id="myBtn">
+
+<script>
+const element = document.getElementById("myBtn");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("img1").innerHTML = "Lord Of The Rings";
+}
+</script>
+
+</body>
+</html>

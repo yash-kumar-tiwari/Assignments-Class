@@ -1,0 +1,11 @@
+In MongoDB, aggregation operations process the data records/documents and return computed results. It collects values from various documents and groups them together and then performs different types of operations on that grouped data like sum, average, minimum, maximum, etc to return a computed result.
+
+Accumulators: These are basically used in the group stage
+
+sum: It sums numeric values for the documents in each group
+count: It counts total numbers of documents
+avg: It calculates the average of all given values from all documents
+min: It gets the minimum value from all the documents
+max: It gets the maximum value from all the documents
+first: It gets the first document from the grouping
+last: It gets the last document from the grouping

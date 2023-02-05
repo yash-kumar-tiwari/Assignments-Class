@@ -1,0 +1,16 @@
+<script>
+    function calcSi(p,r,t)
+    {
+    let si = (parseFloat(p) * parseFloat(r) * parseFloat(t) )/ 100;
+    return (si);
+    }
+
+    var p, r, t, si, amount;
+
+    p = prompt("Enter Principal : ");
+    r = prompt("Enter Rate : ");
+    t = prompt("Enter Time : ");
+    si = calcSi(p,r,t);
+    
+    document.write("Simple interest is "+si+".");
+</script>

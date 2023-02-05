@@ -1,0 +1,19 @@
+<!-- Reversing of 3 Digit Number -->
+<script>
+    var num, rev=0, rem, f, l, m;
+    num=parseInt(prompt("Enter Number: "));
+    temp=num;
+
+    //extraction of first, middle and last digit
+    f=parseInt(num/100);
+    l=num%10;
+    m=parseInt(num/10)%10;
+
+    document.write("First: "+f+"<br>Middle: "+m+"<br>Last: "+l+"<br><br>");
+
+    // Now Reverse Number
+    rev=(l*100)+(m*10)+f;
+
+    document.write("Reverse of Number "+temp+" is "+rev+"<br>");
+
+</script>

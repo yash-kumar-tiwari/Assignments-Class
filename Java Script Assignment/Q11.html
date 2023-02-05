@@ -1,0 +1,43 @@
+
+<html>
+
+	<head>
+	<title> Text Area </title>
+
+	<style> 
+
+	body {background:grey; font-size: 50;} 
+	img{ height:75%; width:30%;}
+
+	</style>
+</head>
+<body>
+
+<select id="select" style="font-size: 100;">
+
+	<option > Seledt IceCream Flavors </option>
+	<option id="onclickphoto" value="You Picked Chocolate"> Chocolate </option>
+	<option id="onclickphoto2" value="You Picked Vanilla"> Vanilla  </option>
+	<option id="onclickphoto3" value="You Picked Strawberry"> Strawberry </option>
+</select>
+<br> <br>
+<form> 
+	<textarea id="ta" style="font-size: 100;"> </textarea>
+
+	 </form>
+
+
+<script>
+const element1 = document.getElementById('select');
+element1.addEventListener("change", myFunction);
+
+function myFunction() {
+  document.getElementById("ta").innerHTML=this.value;
+}
+
+
+
+</script>
+
+</body>
+</html>

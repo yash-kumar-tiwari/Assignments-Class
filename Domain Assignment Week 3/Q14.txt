@@ -1,0 +1,50 @@
+Blocking:
+When javascript execution in Node.js process (each program is a process) has to wait until a non-javascript operation completes is called blocking.
+
+Non-Blocking:
+This is the opposite of the blocking i.e. javascript execution do not wait until the non-javascript operation completes.
+
+
+
+Synchronous & Asynchronous Functions : It is classification of function on the basis of working approach
+
+-> Synchronous or Blocking function : Those function block which when executed will restrict further code from execution are blocking function  
+
+-> Asynchronous or Non-Blocking function : Those function block which when executed will not restrict futher code  from execution are non-blocking function
+
+Note : 
+
+* All functions are by default synchronous in nature , async functions is to be generated as per requirement
+
+* Callback function are mostly implemented async in nature
+
+* Node is unithreaded in nature , by implementing async or non-blocking codes node can behave async in nature
+
+
+//Synchronous or Blocking function
+
+console.log("Before function execution");
+
+function demo()
+{
+ console.log("Demo function invoked");
+}
+
+demo();
+
+console.log("After function execution");
+
+
+//Asynchronous or Non-Blocking function
+
+console.log("Before function execution");
+
+function demo()
+{
+ console.log("Demo function invoked");
+}
+
+//demo();
+setTimeout(demo,3000);
+
+console.log("After function execution");

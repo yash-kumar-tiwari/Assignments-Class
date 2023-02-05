@@ -1,0 +1,39 @@
+PS E:\Universal Informatics\_Class Gaurav Sir\C 9AM\26 may> gcc prog2.c
+PS E:\Universal Informatics\_Class Gaurav Sir\C 9AM\26 may> ./a.exe
+Enter rows and columns of first array : 3
+3
+Enter rows and columns of second array : 3
+3
+enter first array elements : 1
+2
+3
+4
+5
+6
+7
+8
+9
+enter second array elements : 1
+2
+3
+4
+5
+6
+7
+8
+9
+
+first array elements are :
+1       2       3
+4       5       6
+7       8       9
+
+second array elements are : 
+1       2       3
+4       5       6
+7       8       9
+
+Resultant array elements after multiplication :
+30      36      42
+66      81      96
+102     126     150

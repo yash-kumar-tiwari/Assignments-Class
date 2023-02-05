@@ -1,0 +1,17 @@
+MongoDB officially supports two fully-managed techniques of backups. These are:
+
+Continuous Backup: This follows the approach of incremental backup of your data sets in a cluster. Also, it ensures that your backups are done usually just a few seconds later than the operation being performed in the system.
+
+Cloud Provider Snapshots: This is another form of storage which provides backup storage in local machine or system by making use of the native snapshot property provided by the cluster's cloud service provider.
+
+**For performing the data backup properly, you have to make use of the below-mentioned steps:
+
+1.Initiate the MongoDB server using this command: mongod
+
+2.Then, in a new terminal/command prompt (cmd) in administrative mode initiate the MongoDB client system using the command: mongo
+
+3.Go to the necessary collection and execute the command: mongodump.
+
+4.As you run that command, you will see that all the data from the collection (e.g., my_project_db) got dumped.
+
+**For restoring all your backup data in your server, MongoDB provides the command mongorestore. This will restore your entire data from your backup directory.

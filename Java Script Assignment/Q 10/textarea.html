@@ -1,0 +1,58 @@
+<html>
+	<head>
+	<title> Text Area </title>
+
+	<style> 
+
+	body {background:grey;} 
+	img{ height:75%; width:30%;}
+
+	</style>
+<body style="margin-left:150; margin-top:50;">
+
+	<form> 
+	<input type="textarea" id="img1" name="txt1" placeholder="" value="" />
+
+	 </form>
+
+
+<label for="img1">
+	 <img src=".\images\lord.jpg" id="lord">
+<label>
+
+
+	 <img src=".\images\Nightwalker.jpg" id="img2">
+	 <img src=".\images\jack.jpg" id="img3">
+
+
+<script>
+
+
+ const img = document.querySelector('#lord');
+
+       /* img.addEventListener('click', (event) =>{
+        	 let textarea = document.querySelectorAll('#img1');
+
+        	   let values = ['jdfkdsjfk'];
+     
+                //values.push(textarea.value);
+                textarea.value= values;
+
+    
+            });*/
+
+        img.addEventListener("click", myImage);
+
+function myImage() {
+  document.getElementById("img1").innerHTML = "Hello World";
+}
+          
+	 	
+
+	  </script>
+
+
+
+</body>
+
+</html>

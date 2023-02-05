@@ -1,0 +1,53 @@
+<!-- Matrix Multiplication -->
+<script>
+    var i, j, k
+    var mat1 = [[1, 2, 3],[4, 5, 6],[7, 8, 9],];
+    var mat2 = [[1, 2, 3],[4, 5, 6],[7, 8, 9],];
+    var mat3 = [[0, 0, 0],[0, 0, 0],[0, 0, 0],];
+  
+    document.write('Matrix 1: <br>')
+  
+    for (i = 0; i < 3; i++) 
+    {
+      for (j = 0; j < 3; j++) 
+      {
+        document.write(mat1[i][j] + '&nbsp;&nbsp;&nbsp')
+      }
+      document.write('<br>')
+    }
+    document.write('<br><br>')
+  
+    document.write('Matrix 2: <br>')
+  
+    for (i = 0; i < 3; i++) 
+    {
+      for (j = 0; j < 3; j++) 
+      {
+        document.write(mat2[i][j] + '&nbsp;&nbsp;&nbsp')
+      }
+      document.write('<br>')
+    }
+    document.write('<br><br>')
+  
+    // multiply
+    for (i = 0; i < 3; i++) 
+    {
+      for (j = 0; j < 3; j++) 
+      {
+        for (k = 0; k < 3; k++) 
+        {
+          mat3[i][j] = mat3[i][j] + mat1[i][k]*mat2[k][j];
+        }
+      }
+    }
+
+    document.write('Matrix 3: Multiply (mat1 * mat3)<br>')
+    for (i = 0; i < 3; i++) 
+    {
+      for (j = 0; j < 3; j++) 
+      {
+          document.write(mat3[i][j] + '&nbsp;&nbsp;&nbsp')
+      }
+      document.write('<br>')
+    }
+  </script>

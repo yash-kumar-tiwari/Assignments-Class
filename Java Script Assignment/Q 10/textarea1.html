@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<title> Text Area </title>
+
+	<style> 
+
+	body {background:grey;} 
+	img{ height:75%; width:30%;}
+
+	</style>
+</head>
+
+<body style="margin-left:150; margin-top:50;">
+
+	<form> 
+
+	<textarea id="img1"> <textarea>
+
+	 </form>
+
+
+
+	 <img src=".\images\lord.jpg" id="lord">
+
+
+	 <img src=".\images\Nightwalker.jpg" id="img2">
+	 <img src=".\images\jack.jpg" id="img3">
+
+
+<script>
+
+
+    const img = document.getElementById("lord");
+
+        img.addEventListener("click", myImage);
+
+function myImage() {
+  document.getElementById("img1").innerHTML = "Hello World";
+}
+          
+	 	
+
+	  </script>
+
+
+
+</body>
+
+</html>

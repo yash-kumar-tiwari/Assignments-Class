@@ -1,0 +1,21 @@
+<!-- calculate of simple interest -->
+
+<script>
+    //function for calculate simple interest
+    function calcSi(p,r,t)
+    {
+    let si = (parseFloat(p) * parseFloat(r) * parseFloat(t) )/ 100;
+    return (si);
+    }
+
+    //user input
+    var p, r, t, si, amount;
+    p = prompt("Enter Principal : ");
+    r = prompt("Enter Rate : ");
+    t = prompt("Enter Time : ");
+    si = calcSi(p,r,t);
+    amount = parseFloat(p) + parseFloat(si);
+
+    document.write("Simple interest is "+si+" for Principal Amount "+p+" for "+t+" years @ "+r+" ppa.<br><br>");
+    document.write("Total Amount to be Paid is "+amount+".<br><br>");
+</script>

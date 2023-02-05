@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<title>JavaScript Text Area </title>
+	<style> 
+	body {background-color: bisque; font-size: 50;} 
+	img{ height:; width:auto;}
+	</style>
+</head>
+<body>
+<center>
+ <form> 
+  <textarea id="txtArea" style="border:2px solid black;"></textarea>
+ </form>
+<center>
+<img src="./images/call-of-duty.jpg" height="192" width="108" id="onclickphoto1">
+<img src="./images/resident-evil.jpg" height="192" width="108" id="onclickphoto2">
+<img src="./images/tom_clancy.jpg" height="192" width="108" id="onclickphoto3">
+</center>
+
+<script>
+const img1 = document.getElementById("onclickphoto1");
+img1.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("txtArea").innerHTML = "Call of Duty";
+}
+
+const img2 = document.getElementById("onclickphoto2");
+img2.addEventListener("click", myFunction1);
+
+function myFunction1() {
+  document.getElementById("txtArea").innerHTML = "Resident Evil";
+}
+
+const img3 = document.getElementById("onclickphoto3");
+img3.addEventListener("click", myFunction2);
+
+function myFunction2() {
+  document.getElementById("txtArea").innerHTML = "Tom Clancy";
+}
+</script>
+</body>
+</html>

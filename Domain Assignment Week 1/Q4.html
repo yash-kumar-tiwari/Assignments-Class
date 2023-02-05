@@ -1,0 +1,21 @@
+<!-- calculate whether entered number is prime or non  -->
+<script>
+var number, prime = 1;
+
+    //user input
+    number=prompt("Enter Number to check :");
+
+    //check prime or not
+    for(let i = 2; i < number; i++) 
+    {
+      if((number % i) == 0) 
+      {
+         prime = 0;
+      }
+    }
+
+    if (prime == 1)
+    document.write(number+" is prime number.");
+    else
+    document.write(number+" is not a prime number.");
+</script>

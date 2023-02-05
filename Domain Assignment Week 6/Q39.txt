@@ -1,0 +1,8 @@
+Fetch all data from the collection
+If we want to fetch all documents from the collection the following mongodb command can be used :
+
+>db.userdetails.find();
+or
+>db.userdetails.find().pretty();
+
+N.B. find() method displays the documents in a non structured format but to display the results in a formatted way, the pretty() method can be used.
